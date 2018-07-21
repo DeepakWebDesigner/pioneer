@@ -1,0 +1,53 @@
+#login{
+    background: url(../../assets/image/exame.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -180px;
+    min-height: 600px;
+}
+.mainPadding{
+    padding: 0 15%;
+    margin-top: 5%;
+}
+.form_main{
+    background: #87e0fd; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #87e0fd 0%, #53cbf1 40%, #589afe 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #87e0fd 0%,#53cbf1 40%,#589afe 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #87e0fd 0%,#53cbf1 40%,#589afe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#589afe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.modalbx_l{
+	min-height:450px;
+    display: table-cell;
+    padding: 15px !important;
+}
+.modalbx_l h2{
+	color:#ffffff;
+}
+.modalbx_l h4{
+	color:#ffffff;
+}
+.modalbx_r{
+	background-color: #f0f0f0;
+    min-height:450px;
+    display: table-cell;
+    padding: 15px !important;
+    box-shadow: -8px 0px 0px 0px #3ba0e2;
+}
+.inputdes{
+	position:relative;
+	padding-left: 50px !important;
+	background: rgba(252, 252, 252, 0.54) !important;
+    border: #002f76 1px solid !important;
+	padding-top:20px !important;
+	padding-bottom:20px !important;
+	color: #002f76;
+}
+.inuser{
+	position: absolute;
+    z-index: 9;
+    left: 29px;
+    font-size: 20px !important;
+    line-height: 40px !important;
+	color: #002f76;
+}

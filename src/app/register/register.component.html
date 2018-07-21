@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="login" class="sectionMin">
+	<div class="container" >
+		<div class="mainPadding">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding boxShadowMain form_main">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 modalbx_l no-padding">
+					<span class="dblock text-center" style="margin-top: 115px;"><img src="assets/image/logo.png"></span>
+					<h2 class="text-center">Welcome!!</h2>
+					<h4 class="text-center">We Are Happy to have you here.</h4>
+				</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 modalbx_r no-padding">
+    <div class="col-lg-12 mt20">
+        <h3 class="text-left margin_bottom10 colorred margin_top0 ">Create Free Account</h3>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 formInnerTitle">
+                    Register as
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 radio-blue-gap margin_top10 form-check">
+                    <input type="radio" name="type" id="type1" checked [(ngModel)]="content" value="student">
+                    <label for="type1"> Student</label>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 radio-blue-gap margin_top10 form-check">
+                    <input type="radio" name="type" id="type2" [(ngModel)]="content" value="admin">
+                    <label for="type2"> Admin</label>
+                </div>
+            </div> 
+        </div>
+        <div class="clearfix"></div>
+        <form>
+            <div id="student" *ngIf="content == 'student'">
+                <div class="form-group">
+                    <i class="fa fa-user inuser" aria-hidden="true"></i>
+                    <input type="text" placeholder="Full Name" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-calendar inuser" aria-hidden="true"></i>
+                    <input type="text" placeholder="Date of Birth" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-envelope inuser" aria-hidden="true"></i>
+                    <input type="text" placeholder="Email Address" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-key inuser" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-key inuser" aria-hidden="true"></i>
+                    <input type="password" placeholder="Confirm password" class="form-control inputdes">
+                </div>
+            </div>
+            <div id="admin" *ngIf="content == 'admin'">
+                <div class="form-group">
+                    <i class="fa fa-user inuser" aria-hidden="true"></i>
+                    <input type="text" placeholder="Institute Name" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-envelope inuser" aria-hidden="true"></i>
+                    <input type="text" placeholder="Email Address" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-key inuser" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" class="form-control inputdes">
+                </div>
+                <div class="form-group">
+                    <i class="fa fa-key inuser" aria-hidden="true"></i>
+                    <input type="password" placeholder="Confirm password" class="form-control inputdes">
+                </div>
+            </div>
+            <span class="dblock text-right mt20">
+          <a routerLink="/login"  class="pull-left colorred">Already have an account ? Login</a>
+          <button class="btn btn-primary btn_custm">Submit</button>
+        </span>
+        </form>
+    </div>
+</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>

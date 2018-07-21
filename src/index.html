@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pioneer</title>
+	<base href="/">    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="assets/css/jquery.bxslider.css" type="text/css" rel="stylesheet"/>
+	<link href="assets/css/owl.carousel.min.css"  rel="stylesheet"/>
+	<link href="assets/css/owl.theme.default.css"  rel="stylesheet"/>
+	<link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+	<link href="assets/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i,700" rel="stylesheet">
+	<link id="style_main" href="assets/css/stylesheet.css" type="text/css" rel="stylesheet"/>
+	<link href="assets/css/custom_gap.css" type="text/css" rel="stylesheet"/>
+
+
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!-- Waves Effect Css -->
+    <link href="assets/plugins/node-waves/waves.css" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="assets/plugins/animate-css/animate.css" rel="stylesheet" />
+    <!-- Morris Chart Css-->
+    <link href="assets/plugins/morrisjs/morris.css" rel="stylesheet" />
+    
+</head>
+<body class="theme-light-blue">
+	<app-root></app-root>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/jquery.bxslider.js"></script>	
+	<script src="assets/js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bxslider').bxSlider({
+			 auto: true,
+			 autoControls: true,
+			 //speed: 1500,
+			 easing:'ease-in-out'//
+			});
+			$(window).scroll(function(){
+			x=$(window).scrollTop()
+			if(x>100){
+			$(".top-bxbg").css({
+			  "transition":"1s all ease",
+			  "position":"fixed",
+			  "z-index":"999"
+			})
+			}else{
+			$(".top-bxbg").css({
+			  "transition":"1s all ease",
+			  "position":"initial",
+			  "z-index":"999"
+			})
+			}
+			});
+			$('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			responsiveClass:true,
+			nav:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
+			pagination: false,
+			dots: false,
+			responsive:{
+			  0:{
+			    items:1,
+			  },
+			  600:{
+			    items:1,
+			  },
+			  1000:{
+			    items:1,
+			  }
+			}
+			})
+		});
+	</script>
+
+    <!-- Select Plugin Js -->
+    <script src="assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="assets/plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="assets/plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="assets/plugins/raphael/raphael.min.js"></script>
+    <script src="assets/plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="assets/plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="assets/plugins/flot-charts/jquery.flot.js"></script>
+    <script src="assets/plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="assets/plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="assets/plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="assets/plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>
