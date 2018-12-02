@@ -14,12 +14,18 @@ import { UserDetailsComponent } from './dashboard/user-details/user-details.comp
 import { HeaderDashboardComponent } from './dashboard/header-dashboard/header-dashboard.component';
 import { FooterDashboardComponent } from './dashboard/footer-dashboard/footer-dashboard.component';
 import { LeftnavDashboardComponent } from './dashboard/leftnav-dashboard/leftnav-dashboard.component';
+import { StudentBoardComponent } from './dashboard/student-board/student-board.component';
+import { CreatePackageComponent } from './dashboard/create-package/create-package.component';
+import { GenratePackageComponent } from './dashboard/genrate-package/genrate-package.component';
 
 const appRoutes: Routes = [
   { path:'login', component:LoginComponent},
 	{ path:'register', component:RegisterComponent},
   { path:'home', component:HomeComponent},
   { path:'dashboard/user-details', component:UserDetailsComponent},
+  { path:'dashboard/student-board', component:StudentBoardComponent},
+  { path:'dashboard/create-package', component:CreatePackageComponent},
+  { path:'dashboard/genrate-package', component:GenratePackageComponent},
   { path:'', redirectTo:"/home", pathMatch:"full"}
   
 ]
@@ -35,7 +41,10 @@ const appRoutes: Routes = [
     FooterComponent,
     HeaderDashboardComponent,
     FooterDashboardComponent,
-    LeftnavDashboardComponent
+    LeftnavDashboardComponent,
+    StudentBoardComponent,
+    CreatePackageComponent,
+    GenratePackageComponent
   ],
   imports: [
     BrowserModule,

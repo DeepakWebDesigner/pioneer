@@ -1,0 +1,81 @@
+<app-header-dashboard></app-header-dashboard>
+<div class="dashboard_main_section">
+	<div class="row">
+		<div class="panel_main">
+			<div class="col-md-12">
+				<h3>Create Package</h3>
+			</div>
+			<div class="col-md-12 mt15">
+				<div class="row">
+					<div class="col-md-12 addPackage">
+						<div class="row">
+							<div class="form-group clearfix">
+								<div class="col-md-6">
+									<label>Package Name</label>
+									<input type="text" name="" class="form-control" id="packageName" [(ngModel)] = "packageName">
+								</div>
+								<div class="col-md-3">
+									<label>Total time</label>
+									<input type="text" name="" class="form-control" id="totalTime" [(ngModel)]="totalTime">
+								</div>
+								<div class="col-md-3">
+									<label>Total Question</label>
+									<input type="text" name="" class="form-control" id="totalQuestion" [(ngModel)]="totalQuestion">
+								</div>
+							</div>
+							<div class="form-group clearfix">
+								<div class="col-md-3">
+									<label>Start Date</label>
+									<input type="date" name="" class="form-control" id="startDate" [(ngModel)]="startDate">
+								</div>
+								<div class="col-md-3">
+									<label>End Date</label>
+									<input type="date" name="" class="form-control" id="endDate" [(ngModel)]="endDate">
+								</div>
+							</div>
+							<div class="form-group clearfix">
+								<div class="col-md-12">
+									<button class="btn btn-primary" (click)="addPackage()" >Add Package</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 mt15">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default">
+							<div class="panel-heading txtBolt">
+								Added Package
+							</div>
+							<div class="panel-body">
+								<table class="table borderottom no-margin">
+									<tr>
+										<th>S/N.</th>
+										<th>Exame Name</th>
+										<th>Total Que.</th>
+										<th>Time</th>
+										<th>Start Date</th>
+										<th>End Date</th>
+										<th class=" text-center">Create</th>
+									</tr>
+									<tr *ngFor="let addedPackage of createPackage; let i = index" >
+										<td class="verticalMiddle">{{i+1}}</td>
+										<td class="verticalMiddle">{{addedPackage.name}}</td>
+										<td class="verticalMiddle">{{addedPackage.time}}</td>
+										<td class="verticalMiddle">{{addedPackage.Que}}</td>
+										<td class="verticalMiddle">{{addedPackage.startDate}}</td>
+										<td class="verticalMiddle">{{addedPackage.endDate}}</td>
+										<td class="verticalMiddle text-center cursorPointer"><i class="fa fa-pencil" (click)="generatePackage(addedPackage.id)"></i></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer-dashboard></app-footer-dashboard>
